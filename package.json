@@ -7,5 +7,6 @@
     , "coffee-script": ">= 1.1.2"
     , "hamljs": ">= 0.5.1"
     , "redis": ">= 0.6.7"
+    , "redis-url": ">= 0.0.1"
   }
 }
