@@ -4,6 +4,7 @@
 
 express = require 'express'
 routes = require './routes'
+utils = require './util'
 
 app = module.exports = express.createServer()
 
@@ -29,3 +30,5 @@ app.get '/insults', routes.insults
 port = process.env.PORT || 3000
 app.listen port
 console.log "Express server listening on port %d in %s mode", app.address.port, app.settings.env
+
+utils.seed()
