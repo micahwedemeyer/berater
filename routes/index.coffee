@@ -6,10 +6,8 @@ exports.index = (req, res) ->
   res.render 'index.haml', { title: 'Berater' }
 
 exports.insults = (req, res) ->
-  createInsult(foo, res)
-
-foo = (w, res) ->
-  res.json { insult : w }
+  createInsult (insult) ->
+    res.json { insult : insult }
 
 createInsult = (cb, res) ->
   redis = require('redis')
