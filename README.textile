@@ -1,0 +1,3 @@
+h1. Berater
+
+Berater is an insult-on-demand service built in Node.js If you've been searching for an insult generation service with a clean and simple REST API, then you've come to the right place, you turd swilling clod gobbler.
