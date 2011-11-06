@@ -1,3 +1,4 @@
+.DS_Store
 .monitor
 *.js
 node_modules

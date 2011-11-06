@@ -1,4 +1,31 @@
-%h1= title
-%p
-  Welcome to
-  %span= title
+.leftContent
+  .smiley
+.rightContent
+  %h1 You are
+  %h2 a gap-toothed quief monger.
+  %p
+    %span Welcome to
+    %a{href : "/"}
+      %strong
+        deride.me
+    %span the insult-on-demand service with a REST/JSON API.
+  %h3 Uses
+  %ul
+    %li
+      Chat bots like
+      %a{href : "http://hubot.github.com/"} hubot
+      .
+    %li
+      %a{href : "http://twilio.com"}Twilio
+      %span apps.
+    %li Other bullshit projects with zero real-world value. Use your imagination!
+  .space20
+  %form{action : "", method : "post"}
+    .search
+      .searchInputWrap
+        .searchInputLeft
+        .searchInputMiddle
+          .searchInput
+            %input{name : "search", type : "text"}
+      .searchButton
+        %input{src : "/images/search_button.png", type : "image"}

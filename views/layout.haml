@@ -1,8 +1,22 @@
 !!! 5
 %html
   %head
-    %title
-      = title
-    %link{rel : 'stylesheet', href : '/stylesheets/style.css'}
+    %title Deride.me - An insult on demand service!
+    %script{src : "main.js", type : "text/javascript"}
+    %script{src : "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", type : "text/javascript"}
+    %script{src : "/javascript/main.js", type : "text/javascript"}
+    %link{href : "/stylesheets/main.css", rel : "stylesheet"}
   %body
-    != body
+    .container
+      .contentHeader
+      .contentMiddle.clear
+        != body
+      .contentFooter
+      .footerMenu
+        %ul
+          %li
+            %a{href : "#"} Home
+          %li
+            %a{href : "#"} About
+          %li
+            %a{href : "#"} API
