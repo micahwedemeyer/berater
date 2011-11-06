@@ -5,7 +5,13 @@
 db = require('../db')
 
 exports.index = (req, res) ->
-  res.render 'index.haml', { title: 'Berater' }
+  res.render 'index.haml'
+
+exports.about = (req, res) ->
+  res.render 'about.haml'
+
+exports.api = (req, res) ->
+  res.render 'api.haml'
 
 exports.insults = (req, res) ->
   createInsult (insult) ->

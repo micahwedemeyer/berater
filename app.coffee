@@ -26,6 +26,8 @@ app.configure 'production', () ->
 
 app.get '/', routes.index
 app.get '/insults', routes.insults
+app.get '/about', routes.about
+app.get '/api', routes.api
 
 port = process.env.PORT || 3000
 app.listen port
